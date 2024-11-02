@@ -35,7 +35,7 @@ const subjects = [
 
 
 
-const results = [ // отчет недель будет идти с начала четверти
+const results = [ 
 
 //algebra
   {student_id: 1, subject_id: 1, week: 2, mark: 3},
