@@ -14,16 +14,16 @@ const students = [
 ]
 
 const subjects = [
-  {id: 1, name: 'Алгебра', code: 'math', badge: './img/math.png'},
-  {id: 2, name: 'Геометрия', code: 'geometry', badge: './img/chemistry.jpg'},
-  {id: 3, name: 'Русский язык', code: 'russian', badge: './img/chemistry.jpg'},
-  {id: 4, name: 'Литература', code: 'literature', badge: './img/chemistry.jpg'},
-  {id: 5, name: 'Английский', code: 'english', badge: './img/chemistry.jpg'},
+  {id: 1, name: 'Алгебра', code: 'math'},
+  {id: 2, name: 'Геометрия', code: 'geometry', badge: './img/award.gif'},
+  {id: 3, name: 'Русский язык', code: 'russian', badge: './img/award.gif'},
+  {id: 4, name: 'Литература', code: 'literature', badge: './img/award.gif'},
+  {id: 5, name: 'Английский', code: 'english', badge: './img/award.gif'},
   {id: 6, name: 'История', code: 'history', badge: './img/chemistry.jpg'},
   {id: 7, name: 'Общество', code: 'social_studies', badge: './img/chemistry.jpg'},
   {id: 8, name: 'Физика', code: 'phisics', badge: './img/chemistry.jpg'},
   {id: 9, name: 'ИЗО', code: 'art', badge: './img/chemistry.jpg'},
-  {id: 10, name: 'Физ-ра', code: 'physical_culture', badge: './img/chemistry.jpg'},
+  {id: 10, name: 'Физ-ра', code: 'physical_culture'},
   {id: 11, name: 'Химия', code: 'chemistry', badge: './img/chemistry.jpg'},
   {id: 12, name: 'География', code: 'geography', badge: './img/chemistry.jpg'},
   {id: 13, name: 'Биология', code: 'biology', badge: './img/chemistry.jpg'},
@@ -893,18 +893,6 @@ for (let student_id = 1; student_id <= 6; student_id++) {
 })
 }
     
-
-
-
-  badgeList.forEach(student => {
-    const badgePlace = document.getElementsByClassName('TDbages_' + student.student_id)[0]
-    student.badges.forEach(badgeItem => {
-      const badgeImg = document.createElement('img')
-      badgeImg.classList.add('chemistry_badge')
-      badgeImg.setAttribute('src', subjects.find(f => f.id === badgeItem).badge)
-      badgePlace.append(badgeImg)
-    })
-  })
 
   body.append(table, winner_photo);
 }
